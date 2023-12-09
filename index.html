@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,28 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
-<main>
-    <div class="listContainer" id="general"></div>
-    <div class="listContainer" id="priority"></div>
-    <div class="listContainer" id="completed"></div>
-</main>
+    <form class="create-form" action="">
+        <label for=""></label>
+        <input id="title" name="title" type="text" placeholder="Type your task here" required>
+        <button type="button" id="expand-button">Expand</button>
+        <div class="expanded-form hidden">
+            <label for=""></label>
+            <input id="desc" type="text" placeholder="Describe your task (optional)">
+            <input id="general-radio" type="radio" name = 'type' value = 'general'>
+            <label for="general-radio">General</label>
+            <input id="priority-radio" type="radio" name = 'type' value = 'priority'>
+            <label for="priority-radio">Priority</label>
+            <input id="completed-radio" type="radio" name = 'type' value = 'completed'>
+            <label for="completed-radio">Completed</label>
+            <button type="button" id="create-button">Create</button>
+        </div>
+        
+        
+    </form>
+    <main>
+        <div class="list-container" id="general"></div>
+        <div class="list-container" id="priority"></div>
+        <div class="list-container" id="completed"></div>
+    </main>
 </body>
 </html>
