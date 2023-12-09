@@ -10,27 +10,42 @@
 </head>
 <body>
     <form class="create-form" action="">
-        <label for=""></label>
-        <input id="title" name="title" type="text" placeholder="Type your task here" required>
-        <button type="button" id="expand-button">Expand</button>
-        <div class="expanded-form hidden">
+        <div class="form-row">
             <label for=""></label>
-            <input id="desc" type="text" placeholder="Describe your task (optional)">
-            <input id="general-radio" type="radio" name = 'type' value = 'general'>
-            <label for="general-radio">General</label>
-            <input id="priority-radio" type="radio" name = 'type' value = 'priority'>
-            <label for="priority-radio">Priority</label>
-            <input id="completed-radio" type="radio" name = 'type' value = 'completed'>
-            <label for="completed-radio">Completed</label>
-            <button type="button" id="create-button">Create</button>
+            <input id="title" name="title" type="text" placeholder="Type your task here" required>
+            <button type="button" id="expand-button">Expand</button>
+        </div>
+        <div class="expanded-form hidden">
+            <div class="form-row">
+                <label for=""></label>
+                <input id="desc" name="desc" type="text" placeholder="Describe your task (optional)">
+            </div>
+            <div class="form-row">
+                <input id="general-radio" type="radio" name = 'type' value = 'general'>
+                <label for="general-radio">General</label>
+                <input id="priority-radio" type="radio" name = 'type' value = 'priority'>
+                <label for="priority-radio">Priority</label>
+                <input id="completed-radio" type="radio" name = 'type' value = 'completed'>
+                <label for="completed-radio">Completed</label>
+            </div>
+            <div class="form-row"><button type="button" id="create-button">Create</button></div>
         </div>
         
         
     </form>
     <main>
-        <div class="list-container" id="general"></div>
-        <div class="list-container" id="priority"></div>
-        <div class="list-container" id="completed"></div>
+        <div>
+            <h1>General</h1>
+            <div class="list-container" id="general"></div>
+        </div>
+        <div>
+            <h1>Priority</h1>
+            <div class="list-container" id="priority"></div>
+        </div>
+        <div>
+            <h1></h1>
+            <div class="list-container" id="completed"></div>
+        </div>
     </main>
 </body>
 </html>
