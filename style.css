@@ -75,3 +75,13 @@ label {
     width: 30px;
     height: 30px;
 }
+
+button.completed {
+    background-color: blue;
+}
+
+.task-container.completed {
+    order: 1;
+    color: gray;
+    text-decoration: line-through;
+}
