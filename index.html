@@ -20,20 +20,14 @@
                 <input id="title" name="title" type="text" placeholder="Type your task here" required>
                 <button type="button" id="expand-button">Expand</button>
             </div>
-            <div class="expanded-form hidden">
+            <div class="expanded-form">
                 <div class="form-row">
                     <label for=""></label>
                     <input id="desc" name="desc" type="text" placeholder="Describe your task (optional)">
                 </div>
                 <div class="form-row">
-                    <input id="general-radio" type="radio" name = 'type' value = 'general'>
-                    <label for="general-radio">General</label>
-                    <input id="priority-radio" type="radio" name = 'type' value = 'priority'>
-                    <label for="priority-radio">Priority</label>
-                    <input id="completed-radio" type="radio" name = 'type' value = 'completed'>
-                    <label for="completed-radio">Completed</label>
+                    <button type="button" id="create-button">Create</button>
                 </div>
-                <div class="form-row"><button type="button" id="create-button">Create</button></div>
             </div>
         </form>
     </template>
