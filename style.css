@@ -75,13 +75,26 @@ label {
     width: 30px;
     height: 30px;
 }
+button.pinned {
+    background-color: red;
+}
 
 button.completed {
     background-color: blue;
 }
 
-.task-container.completed {
+
+.task-container {
     order: 1;
+}
+.task-container.pinned {
+    order: 0;
+    color: red;
+    text-decoration: underline;
+}
+.task-container.completed {
+    order: 2;
     color: gray;
     text-decoration: line-through;
 }
+
