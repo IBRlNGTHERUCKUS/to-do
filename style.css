@@ -37,7 +37,7 @@ main > div {
     padding: 12px;
 }
 
-.item-container {
+.task-container {
     display: flex;
     justify-content: space-between;
     gap: 12px;
@@ -46,7 +46,7 @@ main > div {
     border-bottom: dashed white;
 }
 
-.mark-completed, .expand-item {
+.mark-completed, .expand-taska {
     width: min-content;
     background: none;
     border: none;
@@ -69,4 +69,9 @@ label {
 
 #title, #desc {
     flex: 1;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
