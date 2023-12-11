@@ -37,66 +37,57 @@ main > div {
     padding: 12px;
 }
 
-/* .task-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    color: white;
-    padding-bottom: 12px;
-    border-bottom: dashed white;
-} */
-
-.mark-completed, .expand-taska {
-    width: min-content;
-    background: none;
-    border: none;
-    color: white;
-}
-
 .hidden {
     display: none;
 }
 
-/* form stuff */
-.form-row {
+/* form template styling */
+.create-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
-
 label {
-    color: white;
+    display:none;
 }
-
-#title, #desc {
+.form-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+#title {
+    width: 100%
+}
+#desc {
+    flex:4;
+    min-width: 200px;
+}
+#dueDate {
     flex: 1;
 }
 
-/* .icon {
-    width: 30px;
-    height: 30px;
+.create-form button {
+    padding: 6px;
+    border-radius: 12px;
+    background: #24a0ed;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem
 }
-button.pinned {
-    background-color: red;
+#create-button {
+    width: 30%;
+}
+.expand-form {
+    width: 100%;
+}
+input, textarea {
+    border-radius: 12px;
+    padding: 6px;
+    outline: none;
+    border: none;
 }
 
-button.completed {
-    background-color: blue;
-}
-
-
-.task-container {
-    order: 1;
-}
-.task-container.pinned {
-    order: 0;
-    color: red;
-    text-decoration: underline;
-}
-.task-container.completed {
-    order: 2;
-    color: gray;
-    text-decoration: line-through;
-} */
 
 /* task template styling */
 .task-container {
@@ -109,7 +100,7 @@ button.completed {
 }
 
 /* remove button default formatting */
-.task-container button {
+button {
     background: none;
     box-shadow: none;
     border: none;
@@ -126,6 +117,10 @@ button.completed {
     stroke: white
 }
 
+.expand-button.expanded {
+    transform: rotate(180deg);
+    transition: all 0.4s}
+
 
 .icon {
     width: 30px;
@@ -134,8 +129,6 @@ button.completed {
     fill-opacity: 0;
     
 }
-.pin-button {
-}
 
 button.pinned, button.completed {
     fill-opacity: 1;
@@ -143,7 +136,4 @@ button.pinned, button.completed {
 
 .task-content {
     flex: 1;
-}
-
-.expand-button {
 }

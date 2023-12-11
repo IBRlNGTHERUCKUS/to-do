@@ -15,20 +15,16 @@
     </main>
     <template id="create-form">
         <form class="create-form" action="">
-            <div class="form-row">
-                <label for=""></label>
-                <input id="title" name="title" type="text" placeholder="Type your task here" required>
-                <button type="button" id="expand-button">Expand</button>
+            <button class="expand-form">Expand</button>
+            <div class="form-items">
+                <label for="title"></label>
+                <input type="text" name="title" id="title" placeholder="Name your task here (required)" required>
+                <label for="desc"></label>
+                <textarea name="desc" id="desc" cols="20" rows="3" style="resize: none" placeholder="describe your task here (optional)"></textarea>
+                <label for="dueDate"></label>
+                <input type="text" name="dueDate" id="dueDate" placeholder="Due Date (optional)">
             </div>
-            <div class="expanded-form">
-                <div class="form-row">
-                    <label for=""></label>
-                    <input id="desc" name="desc" type="text" placeholder="Describe your task (optional)">
-                </div>
-                <div class="form-row">
-                    <button type="button" id="create-button">Create</button>
-                </div>
-            </div>
+            <button type="button" id="create-button">Create</button>
         </form>
     </template>
     <template id="task">
@@ -41,13 +37,13 @@
             </button>
             <div class="task-content">
                 <h2 class="task-title"></h2>
-                <p class="task-description hideable"></p>
-                <p class="task-due-date hideable"></p>
+                <p class="task-description hideable hidden"></p>
+                <p class="task-due-date hideable hidden"></p>
             </div>
             <button class="expand-button icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>expand</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </button>
         </div>
-    </div>
+    </template>
 </body>
 </html>
