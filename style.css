@@ -137,3 +137,9 @@ button.pinned, button.completed {
 .task-content {
     flex: 1;
 }
+.edit-button {
+    color: #24a0ed;
+}
+.delete-button {
+    color: red;
+}
