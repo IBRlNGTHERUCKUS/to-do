@@ -37,14 +37,14 @@ main > div {
     padding: 12px;
 }
 
-.task-container {
+/* .task-container {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     color: white;
     padding-bottom: 12px;
     border-bottom: dashed white;
-}
+} */
 
 .mark-completed, .expand-taska {
     width: min-content;
@@ -71,7 +71,7 @@ label {
     flex: 1;
 }
 
-.icon {
+/* .icon {
     width: 30px;
     height: 30px;
 }
@@ -96,5 +96,54 @@ button.completed {
     order: 2;
     color: gray;
     text-decoration: line-through;
+} */
+
+/* task template styling */
+.task-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    padding-bottom: 12px;
+    border-bottom: dashed white;
 }
 
+/* remove button default formatting */
+.task-container button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding:0;
+}
+
+.pin-button, .complete-button {
+    fill: red;
+    stroke: red;
+}
+
+.expand-button {
+    stroke: white
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2px;
+    fill-opacity: 0;
+    
+}
+.pin-button {
+}
+
+button.pinned, button.completed {
+    fill-opacity: 1;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.expand-button {
+}
