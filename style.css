@@ -99,6 +99,25 @@ input, textarea {
     border-bottom: dashed white;
 }
 
+.task-container.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.collapsible {
+    max-height: 0px;
+    overflow: clip;
+    transition: all 1s;
+}
+
+.collapsible.expanded {
+    max-height: 100px;
+}
+
 /* remove button default formatting */
 button {
     background: none;
@@ -135,7 +154,7 @@ button.pinned, button.completed {
 }
 
 .task-content {
-    flex: 1;
+    
 }
 .edit-button {
     color: #24a0ed;

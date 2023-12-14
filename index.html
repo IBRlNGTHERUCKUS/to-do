@@ -35,12 +35,15 @@
             <button class="pin-button icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pin</title><path d="M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12Z" /></svg>
             </button>
+            
             <div class="task-content">
                 <h2 class="task-title"></h2>
-                <p class="task-description hideable hidden"></p>
-                <p class="task-due-date hideable hidden"></p>
-                <button class="edit-button icon hideable hidden">Edit</button>
-                <button class="delete-button icon hideable hidden">Delete</button>
+                <div class="collapsible">
+                    <p class="task-description"></p>
+                    <p class="task-due-date"></p>
+                    <button class="edit-button icon">Edit</button>
+                    <button class="delete-button icon">Delete</button>
+                </div>
             </div>
             <button class="expand-button icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>expand</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
