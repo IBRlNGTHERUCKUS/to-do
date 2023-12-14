@@ -9,13 +9,19 @@
     <script src="./main.js" defer></script>
 </head>
 <body>
+    <div class="blur-overlay">
+        <form class="new-project" action="">
+            <label for=""></label>
+            <input type="text">
+        </form>
+    </div>
     
     <main>
         
     </main>
     <template id="create-form">
-        <form class="create-form" action="">
-            <button class="expand-form" type="button">Expand</button>
+        <button id="expand-form" type="button">Expand</button>
+        <form action="" class="create-form collapsible">
             <div class="form-items">
                 <label for="title"></label>
                 <input type="text" name="title" id="title" placeholder="Name your task here (required)" required>

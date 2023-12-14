@@ -9,7 +9,10 @@ body, h2, h3, h4, p {
 
 body {
     background-color: rgb(31, 31, 31);
-    padding: 12px 10vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    position: relative;
 }
 
 h1 {
@@ -174,3 +177,18 @@ button.pinned, button.completed {
 .delete-button {
     color: red;
 }
+
+/* Style for overlay forms */
+.blur-overlay {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(31, 31, 31, 0.5);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
