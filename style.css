@@ -47,11 +47,15 @@ main > div {
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    background-color: white;
+    border-radius: 0px 0px 12px 12px;
 }
+
 label {
-    display:none;
+    display: none;
 }
 .form-items {
+    padding: 12px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -67,25 +71,30 @@ label {
     flex: 1;
 }
 
-.create-form button {
+#create-button, #expand-form {
     padding: 6px;
-    border-radius: 12px;
     background: #24a0ed;
     color: white;
     font-weight: bold;
     font-size: 1.2rem
 }
+#expand-form {
+    width: 100%;
+}
+
 #create-button {
+    border-radius: 12px;
     width: 30%;
+    margin-bottom: 10px;
 }
 .expand-form {
     width: 100%;
 }
 input, textarea {
-    border-radius: 12px;
     padding: 6px;
     outline: none;
     border: none;
+    border-bottom: 1px solid gray;
 }
 
 
@@ -116,6 +125,9 @@ input, textarea {
 
 .collapsible.expanded {
     max-height: 100px;
+}
+.create-form.collapsible.expanded {
+    max-height: 200px;
 }
 
 /* remove button default formatting */
