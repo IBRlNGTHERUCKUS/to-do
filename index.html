@@ -11,8 +11,24 @@
 <body>
     <div class="blur-overlay">
         <form class="new-project" action="">
-            <label for=""></label>
-            <input type="text">
+            <h1>Create a new project</h1>
+            <div class="form-row">
+                <label for="new-project-title">Project Name: </label>
+                <input id="new-project-title" name="new-project-title" type="text" placeholder="Awesome Project" required>
+                <label for="new-project-color">Color</label>
+                <select name="new-project-color" id="new-project-color">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <button type="button" id="cancel-project">Cancel</button>
+                <button type="button" id="create-project">Create</button>
+            </div>
         </form>
     </div>
     
