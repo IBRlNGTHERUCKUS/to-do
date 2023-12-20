@@ -86,7 +86,7 @@ const storageController = {
   \***********************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"userProjects":[{"name":"To-Do","color":"red","taskList":[]}]}');
+module.exports = JSON.parse('{"userProjects":[{"name":"To-Do","color":"red","taskList":[{"title":"Welcome to Projects","description":"Use this site to organize your life","dueDate":"","pinned":true,"completed":false}]}]}');
 
 /***/ })
 
