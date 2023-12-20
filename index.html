@@ -20,8 +20,8 @@
 
     <template id="new-project">
         <div class="blur-overlay">
-            <form class="new-project" action="">
-                <h1>Create a new project</h1>
+            <form class="new-project overlay-form" action="">
+                <h1 class="overlay-title">Create a new project</h1>
                 <div class="form-row">
                     <label for="new-project-title">Project Name: </label>
                     <input id="new-project-title" name="new-project-title" type="text" placeholder="Awesome Project" required>
@@ -79,12 +79,21 @@
             </button>
         </div>
     </template>
-    <template id="edit-task-template">
+    <template id="edit-task">
         <div class="blur-overlay">
-            <form class="edit-task" action="">
-                <h1>Edit Task</h1>
+            <form class="edit-task overlay-form" action="">
+                <h1 class="overlay-title">Edit Task</h1>
                 <div class="form-row">
-                    
+                    <label for="">Title:</label>
+                    <input id="title" name="title" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="">Description:</label>
+                    <input id="desc" name="desc" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="">Due Date:</label>
+                    <input id="due-date" name="due-date" type="text">
                 </div>
                 <div class="form-row">
                     <button type="button" id="cancel-edit">Cancel</button>

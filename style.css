@@ -81,7 +81,7 @@ main > div {
 }
 
 #create-button, #expand-form, #create-project, #cancel-project,
-#add-project {
+#add-project, #confirm-edit, #cancel-edit {
     padding: 6px;
     background: #24a0ed;
     color: white;
@@ -188,7 +188,6 @@ button.pinned, button.completed {
 /* Style for overlay forms */
 .blur-overlay {
     display: grid;
-    display: none;
     place-items: center;
     position: fixed;
     top: 0;
@@ -200,13 +199,13 @@ button.pinned, button.completed {
     -webkit-backdrop-filter: blur(2px);
 }
 
-.new-project {
+.overlay-form {
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 
-.new-project h1 {
+.overlay-title {
     font-family: Arial, Helvetica, sans-serif;
     background: #24a0ed;
     padding: 12px 12px;
