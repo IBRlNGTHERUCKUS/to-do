@@ -226,3 +226,13 @@ button.pinned, button.completed {
     align-items: center;
     justify-content: space-evenly;
 }
+.project-header {
+    display: flex;
+}
+.project-header h1 {
+    flex: 1;
+}
+.options-button {
+    color: white;
+    font-size: 36px;
+}
