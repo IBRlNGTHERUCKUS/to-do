@@ -246,7 +246,7 @@ button.pinned, button.completed {
     right: 0;
 }
 .options-container button {
-    border:rgba(31, 31, 31, 0.5) solid 2px;
+    font-size: 1.2rem;
     border: black solid 2px;
     background-color: rgb(23, 23, 23);
     padding: 4px 12px;

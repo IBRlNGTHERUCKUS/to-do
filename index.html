@@ -108,5 +108,31 @@
             <button class="delete-button">Delete Project</button>
         </div>
     </template>
+    <template id="edit-project">
+        <div class="blur-overlay">
+            <form class="edit-project overlay-form" action="">
+                <h1 class="overlay-title">Edit Project</h1>
+                <div class="form-row">
+                    <label for="">Name:</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="">Color:</label>
+                    <select name="new-project-color" id="new-project-color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="orange">Orange</option>
+                        <option value="pink">Pink</option>
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <button type="button" id="cancel-edit">Cancel</button>
+                    <button type="button" id="confirm-edit">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </template>
 </body>
 </html>
