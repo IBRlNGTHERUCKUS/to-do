@@ -119,6 +119,10 @@ input, textarea {
     color: white;
     padding-bottom: 12px;
     border-bottom: dashed white;
+    order: 1;
+}
+.task-container.pinned {
+    order: 0;
 }
 
 .task-container.completed {
@@ -178,9 +182,6 @@ button.pinned, button.completed {
     fill-opacity: 1;
 }
 
-.task-content {
-    
-}
 .edit-button {
     color: #24a0ed;
 }
@@ -206,6 +207,7 @@ button.pinned, button.completed {
     background-color: white;
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .overlay-title {
