@@ -134,5 +134,19 @@
             </form>
         </div>
     </template>
+    <template id="delete-project">
+        <div class="blur-overlay">
+            <form class="delete-project overlay-form" action="" >
+                <h1 class="overlay-title">Delete Project</h1>
+                <div class="form-row">
+                    <h2>Warning! Deleting an project will also delete all the tasks within it.</h2>
+                </div>
+                <div class="form-row">
+                    <button type="button" id="cancel-edit">Cancel</button>
+                    <button type="button" id="confirm-edit" style="background: red">Confirm Delete</button>
+                </div>
+            </form>
+        </div>
+    </template>
 </body>
 </html>
